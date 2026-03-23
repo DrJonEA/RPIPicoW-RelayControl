@@ -11,7 +11,7 @@
 #include "RelayObserver.h"
 #include <PicoLed.hpp>
 
-#define RELAY_COUNT 4
+#define LED_COUNT 4
 
 class RelayLeds : public RelayObserver{
 public:
@@ -27,7 +27,7 @@ public:
 private:
 	PicoLed::PicoLedController *pLeds;
 
-	uint8_t xMapping[RELAY_COUNT];
+	uint8_t xMapping[LED_COUNT];
 };
 
 #endif /* SUBSYSTEMS_REXP1_POWER_EXPV2_TESTRELAYS_SRC_RELAYLEDS_H_ */
